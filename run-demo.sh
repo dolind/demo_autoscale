@@ -8,3 +8,5 @@ done
 echo "Starting Demo"
 kubectl apply -f k8s.yaml
 kubectl -n demo-autoscale get pods -o wide
+
+minikube service frontend -n demo-autoscale
